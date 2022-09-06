@@ -1,0 +1,1262 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin:0;
+    background-image: linear-gradient(to right, rgb(8, 8, 8) , rgb(223, 223, 222));
+}
+
+/* Nav Bar */
+
+#main-header{
+    overflow: hidden;
+}
+
+.main-header-fixed-nav{
+    background-color: beige;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.g-logo{
+    color: aquamarine;
+}
+
+.ene{
+    font-size: 33px;
+    font-family: 'Montserrat';
+}
+
+.logo{
+    font-family: Aharoni;
+    color: beige;
+    font-size: 40px;
+    margin-left: 20px;
+    height: 75px;
+    float: left;
+}
+
+.link{
+    margin-top: 15px;
+    overflow: hidden;
+    margin-right: 5%;
+    display: inline;
+    float: right;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(56, 55, 55);
+    letter-spacing: .5px;
+    font-size: 20px;
+}
+
+.hamburger-toggle{
+    float: right;
+    overflow: hidden;
+    display: none;
+    margin-top: 2%;
+    margin-right: 5%;
+    font-size: 40px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+}
+
+.hamburger-toggle:hover{
+    transition: 0.5s;
+    color: rgb(129, 125, 125);
+}
+
+    /* Hidden Links for Hamburger Toggle */
+.links-container{
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 2px;
+}
+.toggle-links{
+    background-image: linear-gradient(to right, rgb(8, 8, 8) , rgb(223, 223, 222));
+    padding-bottom: 10px;
+}
+
+.toggle-link{
+    list-style: none;
+    font-size: 30px;
+    margin: 10px;
+    display: flex;
+}
+
+.toggle-scroll-link{
+    text-decoration: none;
+    color: rgb(238, 237, 237);
+    font-family: 'Montserrat';
+}
+
+.toggle-scroll-link:hover{
+    color:rgb(5, 5, 5);
+    transition: 0.5s;
+}
+
+    /* Show Links */
+
+.show-toggle-links{
+    height: 20rem;
+}
+
+    /* Responsive Nav */
+
+@media only screen and (max-width: 784px){
+    .link{
+        display: none;
+    }
+
+    .hamburger-toggle{
+        display: inline;
+    }
+}
+
+@media only screen and (min-width: 784px){
+    .toggle-links{
+        display: none;
+    }
+}
+
+.scroll-link{
+    text-decoration: none;
+    color: rgb(29, 28, 28);
+}
+
+.scroll-link:hover{
+    color:beige;
+    transition: 0.5s;
+}
+
+    /* Home arrow link */
+.top-link{
+    margin-top: 40%;
+    margin-right: 2%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: aquamarine;
+    border-radius: 10px;
+    color: rgb(31, 30, 30);
+    padding: 10px;
+    animation: bounce 2s ease-in-out infinite;
+    font-size: 1.25rem;
+    visibility: hidden;
+}
+
+.show-link {
+    visibility: visible;
+    z-index: 100;
+}
+
+    
+/* Showcase */
+
+.showcase{
+    background-image: linear-gradient(to right, rgb(8, 8, 8) , rgb(223, 223, 222));
+    padding: 10px;
+}
+
+.img-cont{
+    float: right;
+}
+
+@media only screen and (max-width: 784px){
+    .img-cont{
+        margin-top: 5%;
+        margin-right: -5%;
+    }
+}
+
+
+.img{
+    height:550px;
+    border-top-right-radius: 290px;
+    border-bottom-right-radius: 250px;
+    float: right;
+    margin-right: 5%;
+    padding-bottom: 13.5px;
+} 
+
+.img-back{
+    padding: 220px;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+    border-radius: 50%;
+    margin-top: 20%;
+    margin-right: 23%;
+}
+
+.img-background{
+    overflow: hidden;
+}
+
+/* Name and Title */
+
+.name-title{
+    float: left;
+    margin-top: 5%;
+    margin-left:5%;
+    color: white;
+}
+
+.name{
+    font-size: 80px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.title{
+    margin-top: -30px;
+    margin-left: 2%;
+    font-size: 55px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    opacity: 0;
+    position: absolute;
+    letter-spacing: 2px;
+}
+
+.title-name{
+    margin-top: -10%;
+    color: rgb(22, 22, 22);
+}
+
+.first-name{
+    color: rgb(22, 22, 22);
+}
+
+
+/* animation */
+
+.t1{
+    animation: ani1 15s infinite;
+}
+
+.t2{
+    animation: ani2 15s infinite;
+
+
+}
+
+.t3{
+    animation: ani3 15s infinite;
+
+}
+
+.t4{
+    animation: ani4 15s infinite;
+
+}
+
+@keyframes ani1{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 0;
+
+    }
+}
+
+@keyframes ani2{
+    30%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 0;
+    }
+}
+
+@keyframes ani3{
+    60%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0;
+    }
+}
+
+@keyframes ani4{
+    80%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+    40% {transform: translateY(-30px);} 
+    60% {transform: translateY(-15px);} 
+ } 
+
+/* About Section */ 
+
+.about-section{
+    padding: 30px;
+    background-color: rgb(29, 28, 28);
+}
+
+.about-title-cont{
+    text-align: center;
+    font-family: 'Titillium Web';
+}
+
+.about{
+    margin-right: -5px;
+    color: beige;
+    font-family: 'Titillium Web';
+    border: beige 3px solid;
+    padding: 10.5px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    font-size: 50px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.a{
+    color: aquamarine;
+}
+
+.me{
+
+    background-color: beige;
+    padding: 21px;
+    padding-left: 20px;
+    color: rgb(29, 28, 28);
+    font-family: 'impact';
+    font-size: 50px;
+    letter-spacing: 2px;
+    border-bottom-right-radius:5px ;
+    border-top-right-radius: 5px;
+}
+
+.profile{
+    text-align: center;
+    margin-top: 2%;
+}
+
+.about-img{
+    height:200px;
+    border-radius: 50%;
+    margin-top: 14px;
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(170, 15, 15));
+    background-color: rgba(170, 169, 169, 0.897);
+    opacity: 0.99;
+    border: rgb(29, 28, 28) 5px solid;
+}
+
+.about-me{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-top:-20px;
+}
+
+.img-back-container{
+    margin-right: 42%;
+    margin-left: 42%;
+}
+
+.about-img-back{
+    margin-top:-90%;
+    margin-left: 15%;
+    z-index: -1;
+    padding: 100px;
+    background-color: rgb(105, 104, 104);
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 784px){
+    .about-img-back{
+        margin-top: -260%;
+        margin-left: -60%;
+    }
+}
+
+.line{
+    margin-top: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 2px;
+    border-radius: 3px;
+    opacity: 0.96;
+    background-color: beige;
+}
+
+@media only screen and (max-width: 784px){
+    .line{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
+
+.desc{
+    color: beige;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+.intro{
+    font-size: 24px;
+}
+
+.auto-info{
+    margin-right:12%;
+    margin-left: 12%;
+    text-align: justify;
+    line-height: 25px;
+}
+
+@media only screen and (max-width: 784px){
+    .auto-info{
+        margin-right: 8%;
+        margin-left: 8%;
+    }
+}
+
+
+/* My Skills Section */
+
+.skills-section{
+    background-color: rgb(29, 28, 28);
+}
+
+.line3{
+    margin-top: 30px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 2px;
+    border-radius: 3px;
+    opacity: 0.96;
+    background-color: beige;
+}
+
+@media only screen and (max-width: 784px){
+    .line3{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+.skill-title{
+    color: beige;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 50px;
+    border: beige 3px solid;
+    margin-left: 35%;
+    margin-right: 35%;
+    border-radius: 3px;
+    letter-spacing: 10px;
+}
+
+@media only screen and (max-width: 784px){
+    .skill-title{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+.s{
+    color: aquamarine;
+}
+
+.line2{
+    padding: 2px;
+    background-color: beige;
+    margin-right: 30%;
+    margin-left: 30%;
+    margin-bottom: 2%;
+    border-radius: 2px;
+}
+
+.dash{
+    color: aquamarine;
+}
+
+.circles{
+    text-align: center;
+}
+
+/* Round Percentage */
+
+.skill-container{
+    margin-top: 7%;
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+    margin-top: 10%;
+    border-radius: 8px;
+    display: inline-block;
+    place-items: center;
+    margin:2%;
+}
+
+/* Percentage HTML */
+.circular-progress-html {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+  }
+.circular-progress-html:before {
+    content: "";
+    position: absolute;
+    height: 84%;
+    width: 84%;
+    background-color: rgb(29, 28, 28);
+    border-radius: 50%;
+  }
+.value-container-html {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    color: beige;
+}
+
+/* Percentage CSS */
+
+.circular-progress-css {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+  }
+.circular-progress-css:before {
+    content: "";
+    position: absolute;
+    height: 84%;
+    width: 84%;
+    background-color: rgb(29, 28, 28);
+    border-radius: 50%;
+  }
+.value-container-css {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    color: beige;
+}
+
+/* Javascript Percentage */
+
+.circular-progress-js {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+  }
+.circular-progress-js:before {
+    content: "";
+    position: absolute;
+    height: 84%;
+    width: 84%;
+    background-color: rgb(29, 28, 28);
+    border-radius: 50%;
+  }
+.value-container-js {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    color: beige;
+}
+
+/* Python Round Percentage */
+
+.circular-progress-py {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+.circular-progress-py:before {
+    content: "";
+    position: absolute;
+    height: 84%;
+    width: 84%;
+    background-color: rgb(29, 28, 28);
+    border-radius: 50%;
+}
+.value-container-py {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    color: beige;
+}
+
+
+/* Lead Guitar Percentage */
+
+.circular-progress-lg {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+  }
+.circular-progress-lg:before {
+    content: "";
+    position: absolute;
+    height: 84%;
+    width: 84%;
+    background-color: rgb(29, 28, 28);
+    border-radius: 50%;
+  }
+.value-container-lg {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    color: beige;
+}
+
+/* Bass Guitar Percentage */
+
+.circular-progress-bg {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+  }
+.circular-progress-bg:before {
+    content: "";
+    position: absolute;
+    height: 84%;
+    width: 84%;
+    background-color: rgb(29, 28, 28);
+    border-radius: 50%;
+  }
+.value-container-bg {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    color: beige;
+}
+
+/* Keyboard Percentage */
+
+.circular-progress-key {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+  }
+.circular-progress-key:before {
+    content: "";
+    position: absolute;
+    height: 84%;
+    width: 84%;
+    background-color: rgb(29, 28, 28);
+    border-radius: 50%;
+  }
+.value-container-key {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    color: beige;
+}
+
+/* Violin Percentage */
+
+.circular-progress-vio {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+.circular-progress-vio:before {
+    content: "";
+    position: absolute;
+    height: 84%;
+    width: 84%;
+    background-color: rgb(29, 28, 28);
+    border-radius: 50%;
+}
+.value-container-vio {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    color: beige;
+}
+
+/* Drawing Percentage */
+
+.circular-progress-art {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+.circular-progress-art:before {
+    content: "";
+    position: absolute;
+    height: 84%;
+    width: 84%;
+    background-color: rgb(29, 28, 28);
+    border-radius: 50%;
+}
+.value-container-art {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    color: beige;
+}
+
+.skill-tag{
+    margin-top: 10%;
+    font-family: impact;
+    color: beige;
+    letter-spacing: 2px;
+}
+
+/* Project Section*/ 
+
+.project-section{
+    padding: 10px;
+    background-color: rgb(29, 28, 28);
+    color: beige;
+}
+
+.title-project{
+    text-align: center;
+}
+
+.proj{
+    color: aquamarine;
+}
+
+.title-project h1{
+    font-family: 'Montserrat';
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+.project-desc{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+@media only screen and (max-width: 784px){
+    .project-desc{
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+}
+
+.project-intro{
+    text-align: justify;
+    font-family: 'Montserrat';
+    line-height: 30px;
+}
+
+.project-showcase-cont{
+    margin-top: 5%;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+.project-div{
+    margin: 1%;
+    position: relative;
+    display: inline-block;
+   
+}
+
+.project{
+    padding-right: 2px;
+    padding-bottom: 2px;
+    height: 350px;
+    width: 275px;
+    box-shadow: rgba(163, 162, 162, 0.35) 0px 5px 15px;
+}
+
+.project-des{
+    text-align: justify;
+    line-height: 20px;
+    hyphens: auto;
+}
+
+
+.h-links{
+    color: rgb(26, 26, 25);
+    text-decoration: none;
+    background-color: beige;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.h-links:hover{
+    background-color: aquamarine;
+    transition: 0.5s;
+}
+
+.fa-github{
+    margin-right: 5px;
+    font-size: 40px;
+}
+
+/* Project Kaggle Notebooks */
+
+.kaggle-title{
+    text-align: center;
+    margin-top: 5%;
+    font-family: 'Montserrat';
+}
+
+.k{
+    color: aquamarine;
+}
+
+.n{
+    color: aquamarine;
+}
+
+.kaggle-notebooks{
+    text-align: center;
+}
+
+.kaggle-notebook{
+    margin: 5%;
+    position: relative;
+    display: inline-block;
+    
+}
+
+.notebook{
+    height: 350px;
+    width: 275px;
+    background-color: beige;
+}
+
+.notebook-title{
+    font-family: 'Montserrat';
+}
+
+.kaggle-link{
+    margin-top: 20%;
+    font-family: 'Montserrat';
+    text-decoration: none;
+    background-color: beige;
+    padding: 10px;
+    border-radius: 5px;
+    color: rgb(26, 26, 25);
+}
+
+.kag{
+    font-family: 'Titillium Web';
+    color: rgb(37, 129, 182);
+}
+
+.kaggle-link:hover{
+    background-color: aquamarine;
+    transition: 0.5s;
+}
+
+/* BLOG */
+
+.blog-section{
+    padding: 10px;
+    background-color: rgb(29, 28, 28);
+}
+
+.bl{
+    color: aquamarine;
+}
+
+.title-blog {
+    text-align: center;
+}
+
+.title-blog h1{
+    color:white;
+    font-family: 'Montserrat';
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+.blog-content{
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.blog-desc{
+    color: beige;
+    font-family: 'Montserrat';
+    word-spacing: 2px;
+    line-height: 28px;
+    font-size: 18px;
+}
+
+.blog-img{
+    margin-top: 5%;
+    width: 100%;
+    height: 425px;
+    border-radius: 5px;
+}
+
+.blog-title{
+    margin-top:5%;
+    color: beige;
+    font-family: 'Titillium Web';
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.blog-body{
+    color: beige;
+    font-family: 'Montserrat';
+    word-spacing: 2px;
+    line-height: 28px;
+    font-size: 18px;
+}
+
+.blog-conc{
+    color: beige;
+    font-family: 'Montserrat';
+    word-spacing: 2px;
+    line-height: 28px;
+    font-size: 18px;
+}
+
+.w{
+    color: aquamarine;
+}
+
+.g-blog{
+    color: aquamarine;
+}
+
+/* Contact Me Section */
+
+.contact-me-section{
+    background-color: rgb(29, 28, 28);
+    padding: 10px;
+    color: beige;
+    font-family: 'Montserrat';
+}
+
+.contact-me-title{
+    text-align: center;
+    font-size: 40px;
+}
+
+.c{
+    color: aquamarine;
+}
+
+.m{
+    color:aquamarine;
+}
+
+.contact-form{
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.field{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 10px;
+}
+
+#message{
+    min-width: 400px; 
+    max-width: 400px;
+    display: inline-block;
+    border: solid 1px black;
+    background-color: beige;
+    color: rgb(36, 35, 35);
+}
+
+#subject{
+    width: 100px;
+}
+
+#email{
+    width: 260px;
+}
+
+#name{
+    width:390px;
+}
+
+.send-btn{
+    margin-top: 10px;
+    width: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;    
+    font-size: 20px;
+    font-family: 'Montserrat';
+    border-radius: 5px;
+    border: none;
+    background-color: aquamarine;
+}
+
+.send-btn:hover{
+    background-color: beige;
+    font-size: 22px;
+    transition: 0.5s;
+}
+
+#main-footer{
+    background-color: rgb(61, 61, 61);
+    color: beige;
+    font-family: 'Montserrat';
+    padding: 60px;
+}
+
+.thin-line{
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 10px;
+    padding: 0.5px;
+    background-color: beige;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.social-text{
+    text-align: center;
+}
+
+.sm-outlet{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sm-logo{
+    margin-left:10px;
+    margin-right:10px;
+    display: inline-block;
+}
+
+.sm-link{
+    text-decoration: none;
+    color: beige;
+}
+
+/*
+    Samsung Galaxy 520 Ultra
+    iPhone XR
+    Samsung Galaxy A51
+    Pixel 5
+*/
+
+@media only screen and (max-width:414px){
+
+    .name{
+        margin-top: -5%;
+        font-size: 50px;
+    }
+
+    .title{
+        font-size: 40px;
+    }
+
+    .img{
+        height: 400px;
+    }
+
+    .img-back{
+        padding:160px;
+    }
+
+    .img-cont{
+        margin-top: 15%;
+        margin-right: 1px;
+    }
+
+    .toggle-link{
+        font-size: 15px;
+    }
+    /* About Me */
+
+    .about{
+        font-size: 30px;
+    }
+
+    .me{
+        font-size: 27px;
+        padding-bottom: 19px;
+    }
+
+    .about-img{
+        height: 150px;
+    }
+
+    .about-img-back{
+        padding: 80px;
+    }
+
+    .line{
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+
+    .intro span strong{
+        font-size: 15px;
+    }
+
+    .auto-info{
+        font-size: 15px;
+    }
+
+    /* Skills */
+
+    .skill-title{
+        font-size: 40px;
+        margin-top: 40px;
+    }
+
+    /* Contact Me */
+
+    #subject{
+        width: 250px;
+    }
+    
+    #email{
+        width: 250px;
+    }
+    
+    #name{
+        width:250px;
+    }
+    
+    #message{
+        min-width: 250px;
+        max-width: 250px;
+    }
+
+    .send-btn{
+        width: 250px;
+    }
+
+    .top-link{
+        padding:6px
+    }
+}
+
+/* iPhone 12 */
+
+@media only screen and (max-width:390px){
+
+    .name{
+        margin-top: -5%;
+        font-size: 50px;
+    }
+
+    .title{
+        font-size: 40px;
+    }
+
+    .img{
+        height: 400px;
+    }
+
+    .img-back{
+        padding:160px;
+    }
+
+    .img-cont{
+        margin-top: 15%;
+    }
+
+    .toggle-link{
+        font-size: 15px;
+    }
+    /* About Me */
+
+    .about{
+        font-size: 30px;
+    }
+
+    .me{
+        font-size: 26px;
+        padding-bottom: 21px;
+    }
+
+    .about-img{
+        height: 150px;
+    }
+
+    .about-img-back{
+        padding: 80px;
+    }
+
+    .img-back-container{
+        margin-top: -20%;
+    }
+
+    .line{
+        margin-right: 85px;
+        margin-left: 85px;
+    }
+}
+
+@media only screen and (max-width:375px){
+    .img-cont{
+        margin-right: -2%;
+    }
+
+    .about-img-back{
+        margin-top: -280%;
+    }
+}
+
+@media only screen and (max-width:360px){
+    .img-cont{  
+        margin-right: -5%;
+    }
+    
+    .skill-title{
+        font-size: 35px;
+    }
+
+    .img-back-container{
+        margin-top: -47%;
+    }
+
+    .line{
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+}
