@@ -340,7 +340,7 @@ body{
     padding: 21px;
     padding-left: 20px;
     color: rgb(29, 28, 28);
-    font-family: 'impact';
+    font-family: 'Impact';
     font-size: 50px;
     letter-spacing: 2px;
     border-bottom-right-radius:5px ;
@@ -423,7 +423,7 @@ body{
 .auto-info{
     margin-right:12%;
     margin-left: 12%;
-    text-align: justify;
+    text-align: left;
     line-height: 25px;
 }
 
@@ -781,7 +781,7 @@ body{
 }
 
 .project-intro{
-    text-align: justify;
+    text-align: left;
     font-family: 'Montserrat';
     line-height: 30px;
 }
@@ -808,7 +808,7 @@ body{
 }
 
 .project-des{
-    text-align: justify;
+    text-align: left;
     line-height: 20px;
     hyphens: auto;
 }
