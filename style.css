@@ -205,7 +205,7 @@ body{
 
 .name{
     font-size: 80px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:Impact;
 }
 
 .title{
@@ -231,22 +231,22 @@ body{
 /* animation */
 
 .t1{
-    animation: ani1 15s infinite;
+    animation: ani1 7s infinite;
 }
 
 .t2{
-    animation: ani2 15s infinite;
+    animation: ani2 7s infinite;
 
 
 }
 
 .t3{
-    animation: ani3 15s infinite;
+    animation: ani3 7s infinite;
 
 }
 
 .t4{
-    animation: ani4 15s infinite;
+    animation: ani4 7s infinite;
 
 }
 
@@ -340,7 +340,7 @@ body{
     padding: 21px;
     padding-left: 20px;
     color: rgb(29, 28, 28);
-    font-family: 'Impact';
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 50px;
     letter-spacing: 2px;
     border-bottom-right-radius:5px ;
@@ -421,8 +421,8 @@ body{
 }
 
 .auto-info{
-    margin-right:12%;
-    margin-left: 12%;
+    margin-right:15%;
+    margin-left: 15%;
     text-align: left;
     line-height: 25px;
 }
@@ -738,6 +738,55 @@ body{
     font-size: 50px;
     color: beige;
 }
+/* Welding */
+
+.circular-progress-weld {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+.circular-progress-weld:before {
+    content: "";
+    position: absolute;
+    height: 84%;
+    width: 84%;
+    background-color: rgb(29, 28, 28);
+    border-radius: 50%;
+}
+.value-container-weld {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    color: beige;
+}
+
+/* Wiring */
+
+.circular-progress-wire {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+.circular-progress-wire:before {
+    content: "";
+    position: absolute;
+    height: 84%;
+    width: 84%;
+    background-color: rgb(29, 28, 28);
+    border-radius: 50%;
+}
+.value-container-wire {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    color: beige;
+}
 
 .skill-tag{
     margin-top: 10%;
@@ -808,7 +857,7 @@ body{
 }
 
 .project-des{
-    text-align: left;
+    text-align: justify;
     line-height: 20px;
     hyphens: auto;
 }
@@ -929,6 +978,24 @@ body{
     width: 100%;
     height: 425px;
     border-radius: 5px;
+}
+
+@media only screen and (max-width: 540px){
+    .blog-img{
+        margin-top: 5%;
+        width: 100%;
+        height: 300px;
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    .blog-img{
+        margin-top: 5%;
+        width: 100%;
+        height: 250px;
+        border-radius: 5px;
+    }
 }
 
 .blog-title{
@@ -1116,7 +1183,8 @@ body{
 
     .me{
         font-size: 27px;
-        padding-bottom: 19px;
+        padding-bottom: 20px;
+        padding-top: 20px;
     }
 
     .about-img{
@@ -1232,6 +1300,8 @@ body{
     }
 }
 
+/* iPhone SE */
+
 @media only screen and (max-width:375px){
     .img-cont{
         margin-right: -2%;
@@ -1239,6 +1309,10 @@ body{
 
     .about-img-back{
         margin-top: -280%;
+    }
+
+    .me{
+        padding-top: 21px;
     }
 }
 
