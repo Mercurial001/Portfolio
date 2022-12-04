@@ -169,6 +169,46 @@ let progressDraw = setInterval(() => {
   }
 }, speedDraw);
 
+let progressBarWeld = document.querySelector(".circular-progress-weld");
+let valueContainerWeld = document.querySelector(".value-container-weld");
+
+let progressValueWeld = 0;
+let progressEndValueWeld = 40;
+let speedWeld = 50;
+
+let progressWeld = setInterval(() => {
+  progressValueWeld++;
+  valueContainerWeld.textContent = `${progressValueWeld}%`;
+  progressBarWeld.style.background = `conic-gradient(
+      #8a2be2 ${progressValueWeld * 3.6}deg,
+      #FAFDF3 ${progressValueWeld * 3.6}deg
+  )`;
+  if (progressValueWeld == progressEndValueWeld) {
+    clearInterval(progressWeld);
+  }
+}, speedWeld);
+
+let progressBarWire = document.querySelector(".circular-progress-wire");
+let valueContainerWire = document.querySelector(".value-container-wire");
+
+let progressValueWire = 0;
+let progressEndValueWire = 40;
+let speedWire = 50;
+
+let progressWire = setInterval(() => {
+  progressValueWire++;
+  valueContainerWire.textContent = `${progressValueWire}%`;
+  progressBarWire.style.background = `conic-gradient(
+      #e68b00 ${progressValueWire * 3.6}deg,
+      #FAFDF3 ${progressValueWire * 3.6}deg
+  )`;
+  if (progressValueWire == progressEndValueWire) {
+    clearInterval(progressWire);
+  }
+}, speedWire);
+
+
+
 // Dynamic Year
 
 const dynamicYear = document.querySelector(".year");
@@ -198,6 +238,9 @@ toggleBar.addEventListener('click', () =>{
   }
 });
 
+toggleLinks.addEventListener("click", function (){
+  linksContainer.style.height = 0;
+})
 
 // ***** Top Link *****
 const topLink = document.querySelector('.top-link');
@@ -211,5 +254,4 @@ window.addEventListener('scroll', () => {
     topLink.classList.remove('show-link')
   }
 })
-
 
