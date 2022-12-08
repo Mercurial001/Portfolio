@@ -46,6 +46,11 @@ body{
     display: inline;
     float: right;
     font-family: Impacto, Impact, sans-serif;
+    @font-face {
+    font-family: Impacto;
+    font-weight: bold;
+    src: url(data:font/ttf;base64,AAEAAAAXAQ...);
+    }
     color: rgb(56, 55, 55);
     letter-spacing: .5px;
     font-size: 20px;
@@ -205,14 +210,24 @@ body{
 
 .name{
     font-size: 80px;
-    font-family: 'Impact';
+    font-family: Impacto, Impact, sans-serif;
+    @font-face {
+    font-family: Impacto;
+    font-weight: bold;
+    src: url(data:font/ttf;base64,AAEAAAAXAQ...);
+    }
 }
 
 .title{
     margin-top: -30px;
     margin-left: 2%;
     font-size: 55px;
-    font-family: 'Impact';
+    font-family: Impacto, Impact, sans-serif;
+    @font-face {
+    font-family: Impacto;
+    font-weight: bold;
+    src: url(data:font/ttf;base64,AAEAAAAXAQ...);
+    }
     opacity: 0;
     position: absolute;
     letter-spacing: 2px;
