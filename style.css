@@ -337,7 +337,8 @@ body{
 .me{
 
     background-color: beige;
-    padding: 21px;
+    padding: 12px;
+    padding-bottom: 16px;
     padding-left: 20px;
     color: rgb(29, 28, 28);
     font-family: 'Anton';
@@ -1183,8 +1184,8 @@ body{
 
     .me{
         font-size: 27px;
-        padding-bottom: 20px;
-        padding-top: 20px;
+        padding-bottom: 17px;
+        padding-top: 15px;
     }
 
     .about-img{
@@ -1279,7 +1280,8 @@ body{
 
     .me{
         font-size: 26px;
-        padding-bottom: 21px;
+        padding-top: 17px;
+        padding-bottom: 16px;
     }
 
     .about-img{
@@ -1312,7 +1314,8 @@ body{
     }
 
     .me{
-        padding-top: 21px;
+        padding-top: 17px;
+        padding-bottom: 16px;
     }
 }
 
