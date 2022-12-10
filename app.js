@@ -255,3 +255,49 @@ window.addEventListener('scroll', () => {
   }
 })
 
+const mainNav = document.querySelector('#main-header');
+const contactId = document.querySelector('#contact-me-id');
+const blogId = document.querySelector('#blog-id');
+const projId = document.querySelector('#projects-id');
+const skillsId = document.querySelector('#skills-id')
+const aboutMeId = document.querySelector('#about-me-id');
+const homeId = document.querySelector('#home-id')
+
+
+
+window.onscroll = function() {stickyFunc()};
+
+
+// linkCol.forEach((colLink) =>{
+//   colLink.addEventListener('scroll', function (e) {
+//     const col = e.currentTarget;
+//     if (window.pageYOffset >= 100) {
+//       col.classList.add("scroll-link-color");  
+//       mainNav.classList.add("main-nav-add"); 
+//     } else {
+//       col.classList.remove("scroll-link-color");
+//       mainNav.classList.remove("main-nav-add");   
+//     }
+//   })
+// });
+
+
+function stickyFunc() {
+  if (window.pageYOffset >= 100) {
+    mainNav.classList.add("main-nav-add");
+    contactId.classList.add('scroll-link-color');
+    blogId.classList.add('scroll-link-color');
+    projId.classList.add('scroll-link-color');
+    skillsId.classList.add('scroll-link-color');
+    aboutMeId.classList.add('scroll-link-color');
+    homeId.classList.add('scroll-link-color');
+  } else {
+    mainNav.classList.remove("main-nav-add");
+    contactId.classList.remove('scroll-link-color');
+    blogId.classList.remove('scroll-link-color');
+    projId.classList.remove('scroll-link-color');
+    skillsId.classList.remove('scroll-link-color');
+    aboutMeId.classList.remove('scroll-link-color');
+    homeId.classList.remove('scroll-link-color');
+  }
+}
