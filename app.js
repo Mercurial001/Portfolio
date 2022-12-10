@@ -228,13 +228,23 @@ toggleBar.addEventListener('click', () =>{
   //toggleLinks.classList.add("show-toggle-links");
   // }
   //toggleLinks.classList.toggle("show-toggle-links");
-  const containerHeight = linksContainer.getBoundingClientRect().height;
+  // const containerHeight = linksContainer.getBoundingClientRect().height;
+  // const linksHeight = toggleLinks.getBoundingClientRect().height;
+  // if(containerHeight === 0){
+  //   linksContainer.style.height = `${linksHeight}px`
+  // }
+  // else{
+  //   linksContainer.style.height = 0;
+  // }
+  // edited for width expansion
+  const containerWidth = linksContainer.getBoundingClientRect().width;
   const linksHeight = toggleLinks.getBoundingClientRect().height;
-  if(containerHeight === 0){
+  if(containerWidth === 0){
     linksContainer.style.height = `${linksHeight}px`
+    linksContainer.style.width = '50%'
   }
   else{
-    linksContainer.style.height = 0;
+    linksContainer.style.width = 0;
   }
 });
 
@@ -254,6 +264,17 @@ window.addEventListener('scroll', () => {
     topLink.classList.remove('show-link')
   }
 })
+
+// const togLink = document.querySelectorAll('toggle-scroll-link');
+
+// togLink.forEach(function (clickLink) {
+//   clickLink.addEventListener('click', (e)=> {
+//     e.preventDefault();
+    
+//     const id = e.currentTarget.getAttribute('href').slice(1);
+//     const element = document.getElementById(id);
+//   })
+// })
 
 const mainNav = document.querySelector('#main-header');
 const contactId = document.querySelector('#contact-me-id');
