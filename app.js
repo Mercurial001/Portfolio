@@ -249,7 +249,7 @@ toggleBar.addEventListener('click', () =>{
 });
 
 toggleLinks.addEventListener("click", function (){
-  linksContainer.style.height = 0;
+  linksContainer.style.width = 0;
 })
 
 // ***** Top Link *****
